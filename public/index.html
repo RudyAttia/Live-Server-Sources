@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prismjs_color/prism.css">
+    <title>Live Server Sources</title>
+</head>
+<body>
+    <header>
+        <div title="beta v-1.2.7">Live Server Sources</div>
+        <div id="divuname"><button id="username" onclick="changeUserName()" title="open change username">Anonymous</button><div id="inputusername"></div></div>
+    </header>
+    <section>
+        <div id="foldersnav">
+            <div id="namefolderon"></div>
+            <div id="oninfdnav"><div id="infdnav"></div></div>
+        </div>
+        <div id="rightpage">
+            <div id="filesopen"><div id="nameoffile"></div><div ondblclick="selectElementText(event.target,event)" id="pathinfile"></div></div>
+            <div id="rootfile">
+                <div id="pathfile"></div>
+                <div id="contentfile" class="line-numbers"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>&copy copyright 2019</div>
+        <div><a href="https://github.com/RudyAttia/Live-Server-Sources.git">code on github</a></div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="ajaxjquery.js"></script>
+    <script src="script.js"></script>
+    <script src="prismjs_color/prism.js"></script>
+</body>
+</html>

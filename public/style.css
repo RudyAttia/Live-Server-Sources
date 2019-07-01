@@ -1,0 +1,308 @@
+body{
+    background-color: rgb(34, 34, 34);
+    color: lightgray;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    overflow: hidden;
+}
+header, footer{
+    display: flex;
+    height: 20px;
+    background-color: rgb(43, 66, 82);
+    color: rgb(202, 202, 202);
+}
+header{
+    justify-content: center;
+    padding: 4px 40px 3px 40px;
+}
+footer{
+    justify-content: space-around;
+    padding: 4px 0px 3px 0;
+}
+footer div a{
+    color: rgb(202, 202, 202);
+    text-decoration: none;
+}
+footer div a:hover{
+    text-decoration: underline;
+    color: rgb(202, 202, 202);
+}
+#divuname{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right:20px;
+}
+#divuname button{
+    height: 27px;
+    width: 200px;
+    background-color: rgb(51, 88, 114);
+    border: none;
+    color: lightgray;
+}
+#divuname button:hover{
+    background-color: rgb(36, 52, 63);
+    border: none;
+}
+#divuname button:focus{
+    border: none;
+    outline: none;
+}
+#inputusername{
+    width: 150px;
+}
+#inamestyle{
+    width: 188px;
+    height: 35px;
+    background-color: rgb(48, 74, 94);
+    margin: auto;
+    padding: 8px 0 0 12px;
+}
+#contentinputbtn{
+    display: flex;
+}
+#contentinputbtn input{
+    width: 130px;
+    height: 18px;
+}
+#contentinputbtn button{
+    width: 40px;
+    height: 24px;
+    background-color: rgb(51, 88, 114);
+}
+section{
+    display: flex;
+}
+#foldersnav{
+    width: 280px;
+    padding-top: 20px;
+    background-color: rgb(46, 46, 46);
+    word-wrap: none;
+}
+#namefolderon{
+    display: flex;
+    background-color: rgb(63, 63, 63);
+    color: rgb(233, 233, 233);
+    padding: 5px 10px;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+#oninfdnav{
+    width: 280px;
+    overflow-y: auto;
+    overflow-x: auto;
+    word-wrap: none;
+    padding-bottom: 8px;
+}
+#infdnav{
+    display: inline-block;
+    min-width: 100%;
+}
+#namefname{
+    width: 230px;
+    text-align: center;
+}
+#closeallf{
+    width: 14px;
+    height: 14px;
+    border: 2px gray solid;
+    background-color: rgb(61, 61, 61);
+    text-align: center;
+    font-size: 12px;
+}
+#closeallf:hover{
+    cursor: pointer;
+}
+.folderclass, .fileclass{
+    display: block;
+    text-align: left;
+    background-color: rgb(46, 46, 46);
+    color: lightgray;
+    border: none;
+    width: 100%;
+    height: 22px;
+    white-space: nowrap;
+    font-size: 15px;  
+}
+.notfileclass{
+    height: 22px;
+    white-space: nowrap;
+}
+.folderclass:hover, .fileclass:hover{
+    background-color: rgb(85, 85, 85);
+    cursor: pointer;
+}
+.folderclass:focus, .fileclass:focus{
+    background-color: rgb(75, 75, 75);
+    outline: none;
+}
+#oninfdnav::-webkit-scrollbar {
+    width: 1em;
+    height: 1em;
+}
+#oninfdnav::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 61, 61); 
+}
+#oninfdnav::-webkit-scrollbar-corner{
+    background-color: rgb(43, 43, 43);
+}
+#rightpage{
+    height: 100%;
+}
+#rootfile{
+    width: 100%;
+}
+#contentfile{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+#contentfile img{
+    margin: 20px;
+}
+#contentfile::-webkit-scrollbar {
+    width: 1em;
+    height: 1em;
+}
+#contentfile::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 61, 61);
+}
+#contentfile::-webkit-scrollbar-corner{
+    background-color: rgb(43, 43, 43);
+}
+#filesopen{
+    background-color: rgb(39, 39, 39);
+    height: 24px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#nameoffile{
+    display: flex;
+    padding-top: 2px;
+    margin-left:25px;
+    max-width: 40%;
+    overflow-x: auto; 
+    margin-right: 15px;
+    white-space: nowrap;
+}
+#pathinfile{
+    background-color: rgb(54, 54, 54);
+    letter-spacing: 0.5px;
+    padding: 4px 10px 0 10px;
+    border-radius: 10px;
+    min-width: 100px;
+    max-width: 55%;
+    margin-right: 20px;
+    overflow-x: auto;
+    word-wrap: none;
+    white-space: nowrap;
+}
+
+#pathinfile::-webkit-scrollbar, #nameoffile::-webkit-scrollbar{
+    width: 1em;
+    height: 0.2em;
+}
+#pathinfile::-webkit-scrollbar-thumb, #nameoffile::-webkit-scrollbar-thumb {
+    background-color: rgb(32, 32, 32);
+}
+#pathinfile::-webkit-scrollbar-corner, #nameoffile::-webkit-scrollbar-corner{
+    background-color: rgb(43, 43, 43);
+}
+
+::selection{
+    background-color: rgb(135, 150, 175);
+}
+::-moz-selection {
+    background-color: rgb(135, 150, 175);
+}
+#zipdownload{
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    padding: 50px 10px 0 10px;
+    min-width: 50px;
+    height: 100px;
+    background-color: rgb(43, 66, 82);
+    color: lightgray;
+    text-align: center;
+}
+#zipdownload:before{
+	content: "";
+	position: absolute;
+    right: 0px;
+    top: 0px;
+	border-color: #FFF rgb(34, 34, 34) rgb(44, 81, 107) #FFF;
+	border-style: solid;
+	border-width: 0px 30px 30px 0px;
+	height: 0px;
+	width: 0px;
+	display: block;
+}
+video{
+    margin: 20px;
+    max-width: 800px;
+    height: auto;
+}
+audio{
+    margin: 20px
+}
+audio:focus, video:focus{
+    outline: none;
+}
+
+/* LOADING LOGO */
+@keyframes lds-dual-ring {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes lds-dual-ring {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+.lds-dual-ring {
+    position: relative;
+}
+.lds-dual-ring div {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 2px solid #000;
+    border-color: #707070 transparent #707070 transparent;
+    -webkit-animation: lds-dual-ring 1.6s linear infinite;
+    animation: lds-dual-ring 1.6s linear infinite;
+}
+.lds-dual-ring {
+    width: 24px !important;
+    height: 18px !important;
+    -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+    transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}
+#spacebeforenof{
+      width: 24px;
+}
+.thesizes{
+      opacity: 0;
+      font-size: 11px;
+      margin-left: 4px;    
+}
+.fileclass:hover>.thesizes, .fileclass:focus>.thesizes{
+    opacity: 1;
+}
